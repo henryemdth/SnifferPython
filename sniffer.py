@@ -30,7 +30,8 @@ def udp_seg(data):
 
 conn = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
 while True:
-    print('')
+    print('Nombre: Henry Jordan Villalobos Quispe')
+    print('CI: 8317401')
     raw_data, addr = conn.recvfrom(65565)
     dest_mac, src_mac, eth_proto, data = ethernet_frame(raw_data)
 
